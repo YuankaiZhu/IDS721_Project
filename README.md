@@ -20,8 +20,9 @@ In this project, a microservice is deployed for providing information of wanted 
 
 ### Usage
 
-1. Get brief introduction of wanted city by inputing URL: http://ec2-35-153-102-0.compute-1.amazonaws.com/city/cityname. For example:
-   * http://ec2-35-153-102-0.compute-1.amazonaws.com/city/newyork
+1. Get brief introduction of wanted city by inputing URL: http://ec2-34-207-195-21.compute-1.amazonaws.com/city/cityname. For example:
+   * http://ec2-34-207-195-21.compute-1.amazonaws.com/city/newyork
      * New York is located at (latitude, longitude) 40.6943, -73.9249. It is in United States. New York has the population of 18713220.0.
-   * http://ec2-35-153-102-0.compute-1.amazonaws.com/city/shanghai
+   * http://ec2-34-207-195-21.compute-1.amazonaws.com/city/shanghai
      * Shanghai is located at (latitude, longitude) 31.1667, 121.4667. It is in China. Shanghai has the population of 22118000.0.
+
