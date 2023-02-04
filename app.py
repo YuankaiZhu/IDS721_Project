@@ -26,21 +26,25 @@ def getCity(city):
     res = requests.get(url)
     data = res.json()
     
-    name = data['name']
-    time = datetime.fromtimestamp(data['dt']).strftime("%A, %B %d, %Y %I:%M:%S")
-    lon = data['coord']['lon']
-    lat = data['coord']['lat']
-    country = data['sys']['country']
-    humidity = data['main']['humidity']
-    pressure = data['main']['pressure']
-    wind = data['wind']['speed']
-    description = data['weather'][0]['description']
-    temp = "{:.2f}".format(data['main']['temp'] - 273.15)
-
-    return (name + " is located at (latitude, longitude) " + str(lon) + ", " + str(lat)
-      + ". It is in " + country + ". " + "Current local time is " + str(time) + "." + "\n" 
-      + 'Current weather info: Temperature: ' + str(temp) + '°C' + ', Wind: ' + str(wind) + 
-      ', Pressure: ' + str(pressure) + ', Humidity: ' + str(humidity) + ', Sky: ' + description)
+    try:
+        name = data['name']
+        time = datetime.fromtimestamp(data['dt']).strftime("%A, %B %d, %Y %I:%M:%S")
+        lon = data['coord']['lon']
+        lat = data['coord']['lat']
+        country = data['sys']['country']
+        humidity = data['main']['humidity']
+        pressure = data['main']['pressure']
+        wind = data['wind']['speed']
+        description = data['weather'][0]['description']
+        temp = "{:.2f}".format(data['main']['temp'] - 273.15)
+    
+        return (name + " is located at (latitude, longitude) " + str(lon) + ", " + str(lat)
+          + ". It is in " + country + ". " + "Current local time is " + str(time) + "." + "\n" 
+          + 'Current weather info: Temperature: ' + str(temp) + '°C' + ', Wind: ' + str(wind) + 
+          ', Pressure: ' + str(pressure) + ', Humidity: ' + str(humidity) + ', Sky: ' + description)
+      
+    except Exception as e: # work on python 3.x
+        return "Sorry, we cannot find that data."
 
 
 
