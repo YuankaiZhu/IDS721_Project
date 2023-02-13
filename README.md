@@ -1,4 +1,4 @@
-## IDS 721 Project 1 -- Cloud Continuous Delivery of Microservice -- Major City Info Finder
+## IDS 721 Project -- Cloud Continuous Delivery of Microservice -- Major City Info Finder
 
 
 
@@ -17,6 +17,10 @@ In this project, a microservice is deployed for providing information of wanted 
 * Apply AWS Cloud9 as IaC to deploy code
 
   <img src="README.assets/image-20230120170354341.png" alt="image-20230120170354341" style="zoom:50%;" />
+  
+* Apply a customized Docker container from the current version of project and deploy it
+
+* Push image to DockerHub https://hub.docker.com/repository/docker/zyk1005505432/cityfinder/general
 
 ### Usage
 
