@@ -22,6 +22,13 @@ In this project, a microservice is deployed for providing information of wanted 
 
 * Push image to DockerHub https://hub.docker.com/repository/docker/zyk1005505432/cityfinder/general
 
+### Install
+1. Pull the image from Docker Hub
+
+2. run sh start.sh to install on local machine
+
+3. run command: docker run -p 5000:80 --name cityfinderrun zyk1005505432/cityfinder
+
 ### Usage
 
 1. Get brief introduction of wanted city by inputing URL: http://ec2-34-207-195-21.compute-1.amazonaws.com/city/name. For example:
