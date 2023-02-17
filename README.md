@@ -22,6 +22,8 @@ In this project, a microservice is deployed for providing information of wanted 
 
 * Push image to DockerHub https://hub.docker.com/repository/docker/zyk1005505432/cityfinder/general
 
+* Deployeed docker container on AWS EKS K8S worker node. 
+
 ### Install
 1. Pull the image from Docker Hub
 
