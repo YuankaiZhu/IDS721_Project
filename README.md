@@ -29,9 +29,7 @@ In this project, a microservice is deployed for providing information of wanted 
 ### Install
 1. Pull the image from Docker Hub
 
-2. run sh start.sh to install on local machine
-
-3. run command: docker run -p 5000:80 --name cityfinderrun zyk1005505432/cityfinder
+3. run command: sudo docker run --network="host" -p 5000:80 zyk1005505432/cityfinder
 
 ### Usage
 
