@@ -24,6 +24,8 @@ In this project, a microservice is deployed for providing information of wanted 
 
 * Deployeed docker container on AWS EKS K8S worker node. 
 
+  ![image-20230216214611409](./README.assets/image-20230216214611409.png)
+
 ### Install
 1. Pull the image from Docker Hub
 
