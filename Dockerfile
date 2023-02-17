@@ -15,5 +15,6 @@ RUN pip install --upgrade pip &&\
 EXPOSE 80
 
 # Run app.py at container launch
-CMD ["python", "app.py"]
-
+# CMD ["python", "app.py"]
+# CMD ["sudo ./venv/bin/python", "app.py"]
+CMD ["flask", "run", "--host", "0.0.0.0"]
