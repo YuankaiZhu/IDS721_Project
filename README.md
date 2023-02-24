@@ -29,9 +29,7 @@ In this project, a microservice is deployed for providing information of wanted 
 ### Install
 1. Pull the image from Docker Hub
 
-2. Active python venv
-
-3. run command: sudo docker run --network="host" -p 5000:80 zyk1005505432/cityfinder
+2. run command: sudo docker run --network="host" -p 5000:80 zyk1005505432/cityfinder
 
 ### Usage
 
